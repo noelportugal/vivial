@@ -2,9 +2,11 @@
 A (un-official) Vivial Connect NodeJs Package
 
 # Install
+```
 npm install --save vivial
-
+```
 # Usage
+```javascript
 const Vivial = require('vivial')
 
 const credentials = {
@@ -26,8 +28,10 @@ var requestBody = {
 vivial.sendSms(requestBody).then(function (data) {
   console.log(data)
 })
-
+```
 # Lookup
+```javascript
 vivial.lookup('+19999999999').then(function (data) {
   console.log(data)
 })
+```
